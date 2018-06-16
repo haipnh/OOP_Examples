@@ -36,7 +36,7 @@ public class StudentManagement {
         catch(Exception e){
             System.out.println("Student not found");
         }
-        System.out.println("Removing \"Ng.Ph.H. An\" list");
+        System.out.println("Removing \"Ng.Ph.H. An\" from list");
         StudentList_KMT17.RemoveStudentByName("Ng.Ph.H. An");
         StudentList_KMT17.ShowList();
     }    
