@@ -50,7 +50,7 @@ public class StudentList {
     }
     public void ShowList(){
         int index=0;
-        System.out.println("                 =====STUDENT LIST MANAGEMENT=====");
+        System.out.println("                 =====STUDENT MANAGEMENT=====");
         System.out.format("%-5s | %-20s | %-10s | %-10s | %-10s | %-10s\n","Index","Name","Born year","Sex","ID","Score");
         for(int i = 0 ; i < 75; i++)
             System.out.print("=");
@@ -62,6 +62,6 @@ public class StudentList {
                 index++;
             }
         }
-        System.out.println("                   =====END OF STUDENT LIST=====");
+        System.out.println("                    =====END OF LIST=====");
     }
 }

@@ -20,6 +20,7 @@ public class StudentManagement {
         StudentList_KMT17.AddStudent(new Student("Ng.Ph.H. An",1999,2,17119002,7.9));
         StudentList_KMT17.AddStudent(new Student("Ng.L.Q. Bao",1999,1,17119005,8.2));
         StudentList_KMT17.ShowList();
+        System.out.println("Searching for \"Trinh\"");
         Student student = StudentList_KMT17.GetStudentByName("Trinh");
         try{
             student.ShowInfo();
@@ -27,5 +28,16 @@ public class StudentManagement {
         catch(Exception e){
             System.out.println("Student not found");
         }
+        System.out.println("Searching for \"Ng.M. Anh\"");
+        student = StudentList_KMT17.GetStudentByName("Ng.M. Anh");
+        try{
+            student.ShowInfo();
+        }
+        catch(Exception e){
+            System.out.println("Student not found");
+        }
+        System.out.println("Removing \"Ng.Ph.H. An\" list");
+        StudentList_KMT17.RemoveStudentByName("Ng.Ph.H. An");
+        StudentList_KMT17.ShowList();
     }    
 }
